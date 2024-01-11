@@ -1,5 +1,5 @@
 package com.example.students.event;
 
-public enum EventType {
+public enum StudentEventType {
     ADD, DELETE
 }

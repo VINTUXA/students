@@ -1,7 +1,7 @@
 package com.example.students.service;
 
 import com.example.students.event.EventHolder;
-import com.example.students.event.EventType;
+import com.example.students.event.StudentEventType;
 import com.example.students.model.Student;
 import com.example.students.storage.StudentStorage;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,7 @@ public class StudentServiceImpl implements StudentService{
     @Override
     public void add(Student student) {
         studentStorage.add(student);
-        publisher.publishEvent(new EventHolder(this, student, EventType.ADD));
+        publisher.publishEvent(new EventHolder(this, student, StudentEventType.ADD));
     }
 
     @Override
@@ -36,7 +36,7 @@ public class StudentServiceImpl implements StudentService{
     @Override
     public boolean delete(String id) {
         try{
-            publisher.publishEvent(new EventHolder(this, studentStorage.getStudentById(id), EventType.ADD));
+            publisher.publishEvent(new EventHolder(this, studentStorage.getStudentById(id), StudentEventType.DELETE));
         } catch (NullPointerException e){
             System.out.println(e);
         }

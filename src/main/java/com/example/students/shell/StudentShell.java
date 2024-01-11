@@ -19,8 +19,9 @@ public class StudentShell {
 
     @ShellMethod(key = "add")
     private void add(@ShellOption(value = "f") String firstName,
-                       @ShellOption(value = "l") String lastName) {
-        Student student = new Student(firstName, lastName);
+                     @ShellOption(value = "l") String lastName,
+                     @ShellOption(value = "a") int age) {
+        Student student = new Student(firstName, lastName, age);
         studentService.add(student);
     }
 

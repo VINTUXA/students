@@ -13,19 +13,19 @@ Just build and run this spring application as usual.
 
 ### CLI commands
 All interaction provided by CLI commands:
-- adding new student. M. Format should match pattern : {name};{phone};{email}
+- adding new student. Format should match pattern.
     ```
-    add --f {first name} --l {last name}
+    add --f {first name} --l {last name} --a {age}
     ```
-- remove student by id. You can find needed id using command list
+- remove student by id. You can find needed id using command list.
     ```
     delete --id {id}
     ```
-- presentation of full list of students
+- presentation of full list of students.
     ```
     list
     ```
-- clean students storage
+- clean students storage.
     ```
     clean
     ```

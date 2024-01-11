@@ -7,10 +7,11 @@ import org.springframework.context.ApplicationEvent;
 @Getter
 public class EventHolder extends ApplicationEvent {
     private final Student student;
-    private EventType eventType;
+    private StudentEventType studentEventType;
 
-    public EventHolder(Object source, Student student, EventType eventType) {
+    public EventHolder(Object source, Student student, StudentEventType studentEventType) {
         super(source);
         this.student = student;
+        this.studentEventType = studentEventType;
     }
 }

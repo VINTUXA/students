@@ -30,7 +30,7 @@ public class StudentInitializer {
             String line;
             while ((line = reader.readLine()) != null){
                 String[] contactData = line.split(";");
-                Student student = new Student(contactData[0],contactData[1]);
+                Student student = new Student(contactData[0],contactData[1], Integer.valueOf(contactData[2].replaceAll(" ", "")));
                 studentStorage.add(student);
             }
             reader.close();
