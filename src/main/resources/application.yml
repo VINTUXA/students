@@ -1,0 +1,7 @@
+app:
+  student-initializer:
+    enabled: false
+initial:
+  students:
+    file:
+      path: src/main/resources/students.csv
