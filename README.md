@@ -39,17 +39,17 @@ The application can initialize starting storage of students list wia csv. To do 
 
 ## Docker
 Make sure to disable initialization, it would not work with it.
-1. Start docker on your pc
-2. Build image
+1. Start docker on your pc.
+2. Build image:
     ```
     docker build -t student-server .
     ```
-3 run container
+3. Run container:
     ```
     docker run -it --rm student-server
     ```
     Now you can use shall as usual.
-4 Exit. If you want to exit, just type
+4. Exit. If you want to exit, just type:
     ```
     docker run -it --rm student-server
     ```
