@@ -11,6 +11,22 @@ java {
 	sourceCompatibility = '17'
 }
 
+jar {
+	archiveBaseName = 'student-service.jar'
+
+	manifest {
+		attributes 'Main-Class': 'StudentsApplication'
+	}
+}
+
+sourceSets {
+	main {
+		resources {
+			srcDirs = ["src/main/resources"]
+		}
+	}
+}
+
 repositories {
 	mavenCentral()
 }

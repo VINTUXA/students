@@ -1,6 +1,6 @@
 app:
   student-initializer:
-    enabled: true
+    enabled: false
 initial:
   students:
     file:
