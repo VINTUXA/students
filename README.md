@@ -32,7 +32,7 @@ All interaction provided by CLI commands:
 
 ## Usage
 
-The application can initialize starting students list wia csv. To do this, you need to following:
+The application can initialize starting storage of students list wia csv. To do this, you need to following:
 - Prepare file with format {firstName};{lastName}. Example of that file located at src/main/resources/students.csv.
 - Enable initialization in properties. Use property app.student-initializer.enabled with true/false value. 
 - Set path to csv file in properties. Use property initial.students.file.path
